@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(#fff, #fff);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.First-Salutation, .Second-Salutation {
+    display: flex; /* Use flexbox to align children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    color: #050505;
+    font-family: "Garamond", sans-serif; 
+    font-weight: 800;
+    text-transform: none; 
+    font-size: 2rem; 
+    line-height: 1.5;
+    margin: 20px auto; /* Adjusted to apply margin uniformly */
+    padding: 20px;
+}
+
+/* Assuming Reassurance-sentence is within a div that needs centering */
+.Reassurance-sentence {  
+    color: #fff;
+    font-family: "Garamond", sans-serif; 
+    font-weight: 600;
+    text-transform: none; 
+    font-size: 2rem; 
+    line-height: 1.5;
+    background-color: #050505;
+    padding: 20px; 
+    margin: 0 auto 30px; /* Adds space below the reassurance sentence */
+    text-align: center;
+}
+
+label {
+    color: #050505; /* White text color for visibility */
+    font-family: "Garamond", sans-serif;
+    font-size: 1rem; /* Smaller than your salutation for subtlety */
+    margin-bottom: 5px; /* Space above each input */
+    display: block; /* Ensure labels are above inputs */
+}
+
+.contact-inputs{
+    text-transform: none;
+}
+
+.contact-inputs, .Contact-left textarea {
+    width: 100%; /* Adjusted to fill container width */
+    max-width: 400px; /* Ensures inputs do not exceed this width */
+    
+    /* Remaining styles unchanged */
+}
+
+.Contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the content */
+    width: 100%;
+    max-width: 450px; /* Adjust width as necessary */
+}
+
+
+
+.submit-button {
+    background-color: #050505;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase; /* Changed to uppercase for consistency */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.submit-button:hover {
+    color: #aef359;
+}
+
+.submit-button img {
+    pointer-events: none;
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.Contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Changed to center for both form and images */
+    gap: 20px; /* Added gap between form and images */
+}
+
+.Contact-left, .Contact-Right, .Contact-Right2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* To center contents */
+}
+
+.contact-inputs, .Contact-left textarea {
+    width: 400px;
+    height: 50px; /* Height for inputs */
+    border: 1px solid black; /* 1px solid black border around the inputs */
+    outline: none;
+    padding: 10px 25px; /* Padding inside the inputs */
+    font-weight: 500;
+    color: #666;
+    border-radius: 25px; /* Rounded corners for inputs */
+    margin-bottom: 20px; /* Adds space below each input */
+}
+
+.Contact-left textarea {
+    height: 200px; /* Specific height for the textarea */
+    padding-top: 15px;
+    padding-left: 25px; /* Ensure padding consistency */
+    border-radius: 10px; /* Rounded corners for textarea */
+    border: 1px solid black; /* 1px solid black border around the textarea */
+    resize: none; /* Prevents resizing of the textarea */
+    margin-bottom: 20px; /* Adds space below the textarea */
+
+}
+
+
+.Contact-Right img, .Contact-Right2 img {
+    pointer-events: none;
+    width: 400px;
+    height: auto;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Choose a suitable background color */
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+}
+
+.container2_item {
+    margin: 0 10px; /* Adjust spacing between items */
+}
+
+.container2_item a {
+    color: #fff; /* Set text color to white */
+    text-decoration: none;
+}
+
+.CopyrightNotice {
+    font-family: Calibri, sans-serif;
+}

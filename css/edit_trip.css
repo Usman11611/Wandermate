@@ -1,0 +1,136 @@
+/* General Page Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #660000; /* Dark red */
+    background-image: url('Images/edit_trip.webp'); /* Set the background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for modern look */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px;
+    border: 1px solid #ddd; /* Light border for a polished look */
+    width: 90%; /* Make the form take up 90% of the page width */
+
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Form Field Styles */
+.field {
+    margin-bottom: 20px;
+}
+
+.field label {
+    display: block;
+    font-size: 1em;
+    color: #555; /* Dark gray for labels */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #b22222; /* Highlight border with Royale Red */
+    outline: none;
+    background-color: #fff;
+}
+
+/* Textarea Styles */
+.field textarea {
+    resize: none;
+    height: 120px; /* Adjusted height for better visual */
+}
+
+/* Button Styling */
+.btn {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 48%; /* Buttons side by side */
+    text-align: center;
+    margin: 10px 1%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Buttons */
+.btn:hover {
+    background-color: #660000; /* Darker red for hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Action Buttons Alignment */
+.field.actions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Go Back Button */
+.field.actions .btn:last-child {
+    background-color: #6c757d; /* Neutral gray for the "Go Back" button */
+}
+
+.field.actions .btn:last-child:hover {
+    background-color: #5a6268; /* Darker gray for hover */
+}
+
+/* Custom Dropdown */
+.searchable-dropdown {
+    appearance: none; /* Remove default browser styles */
+    -webkit-appearance: none;
+    background-image: url('Images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .field.actions .btn {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin: 10px 0;
+    }
+}

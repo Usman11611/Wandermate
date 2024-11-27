@@ -1,0 +1,185 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+.body1 {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/Register.webp'); /* Correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    color: #660000; /* Dark red text color */
+    min-height: 120vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #b22222; /* Royale Red */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.Company_logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc; /* Lightened red */
+}
+
+.Quote {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #000000; /* Royale Red */
+    padding: 20px;
+}
+
+/* Register Form Section */
+.register-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.register-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px; /* Increased width */
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    font-size: 1.8rem;
+    color: #b22222;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #660000;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px; /* Slightly larger for a better look */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem; /* Increased font size */
+}
+
+.btn {
+    display: block; /* Make the button behave like a block element */
+    background-color: #b22222;
+    color: #fff;
+    border: none;
+    padding: 12px 30px; /* Larger padding for better look */
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto; /* Center the button horizontally */
+    text-align: center; /* Center the text inside the button */
+}
+
+
+.btn:hover {
+    background-color: #660000;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.links a {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container2_item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container2_item a:hover {
+    color: #ffcccc; /* Lightened red */
+}
+
+.CopyrightNotice {
+    font-size: 0.9rem;
+    color: #ffcccc; /* Lighter text for copyright */
+}

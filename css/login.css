@@ -1,0 +1,192 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and html elements fill the viewport */
+html, body {
+    height: 100%; /* Ensures the body fills the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Enables flexbox for vertical alignment */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #660000; /* Dark red */
+    line-height: 1.6;
+    background-image: url('Images/login.webp'); /* Replace with the actual path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    flex: 1; /* Ensures body stretches to fill the viewport */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #b22222;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.Company_logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc; /* Lightened red */
+}
+
+/* Quote Styling */
+.Quote {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #000000;
+    padding: 20px;
+}
+
+/* Login Section */
+.login-container {
+    flex: 1; /* Expands to fill available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    font-size: 1.8rem;
+    color: #b22222;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #660000;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.btn {
+    background-color: #b22222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #660000;
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.links a {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b22222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.container2_item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container2_item a:hover {
+    color: #ffcccc;
+}
+
+.CopyrightNotice {
+    font-size: 0.9rem;
+    color: #ffcccc;
+}

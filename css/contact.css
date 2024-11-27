@@ -1,0 +1,171 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/Wander1.webp'); /* Ensure this path is correct */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    color: #660000; /* Dark red text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #b22222; /* Royale Red */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.Company_logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Navbar Links */
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+/* Contact Form Styling */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 50px;
+    flex-grow: 1; /* Push footer to the bottom */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b22222; /* Royale Red */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #660000;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #b22222; /* Royale Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #660000; /* Dark red hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: auto; /* Sticks the footer to the bottom */
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.container2_item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container2_item a:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+.CopyrightNotice {
+    font-size: 0.9rem;
+    color: #ffcccc; /* Lighter text for copyright */
+}
+
+/* Greeting Popup */
+.greeting {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #b22222;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}

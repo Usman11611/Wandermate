@@ -1,0 +1,372 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure Full Height for Body and HTML */
+html, body {
+    height: 100%;
+}
+
+/* Body Styling */
+.body1 {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/destinations.webp'); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center;
+    color: #660000; /* Dark red text color */
+    min-height: 100%; /* Full height for flexbox layout */
+    display: flex;
+    flex-direction: column; /* Use flexbox to structure the layout */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #b22222; /* Royale Red */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.Company_logo {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.Company_logo img {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Disable interaction */
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+/* Quote Styling */
+.Quote {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #000000; /* Royale Red */
+    padding: 20px;
+}
+
+/* Planned Trips Section */
+.user-plans {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.9); /* Subtle background overlay */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    grid-area: center;
+}
+
+.user-plans h2 {
+    font-family: 'Garamond', serif;
+    font-size: 2.5rem;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 20px;
+}
+
+.plans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    text-align: right;  /* Align all text to the right by default */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.plan-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card h3 {
+        color: #b22222; /* Royale Red */
+        margin-bottom: 10px;
+        text-align: center; /* Center the header */
+        font-size: 1.6rem;
+    
+}
+
+.plan-card p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.plan-card .btn {
+    margin-top: 20px; /* Adds spacing between button and content */
+    align-self: center; /* Center the button */
+    display: block;  /* Ensure the button is a block-level element */
+}
+
+/* Layout for sections */
+.content-wrapper {
+    flex: 1; /* Ensures this section fills the available space */
+    display: grid;
+    grid-template-areas: 
+        "recommendations center global-weather";
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.recommendations form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Add spacing between the inputs */
+    margin-bottom: 20px; /* Optional: Space below the form */
+}
+
+.recommendations label {
+    font-size: 1.2rem;
+    color: #660000; /* Dark red color */
+    font-weight: bold;
+}
+
+/* Recommendations Section */
+.recommendations {
+    grid-area: recommendations;
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    gap: 20px; /* Space between children */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px; /* Adds space below the input fields */
+}
+
+/* Search Weather Section */
+.search-weather {
+    margin-top: 20px;
+    border-top: 1px solid #ddd; /* Add a separator */
+    padding-top: 20px; /* Space above the content */
+}
+
+.search-weather h3 {
+    font-family: "Garamond", serif;
+    font-size: 1.5rem;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 15px;
+}
+
+.search-weather form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+}
+
+.search-weather input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-weather button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #b22222; /* Royale Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-weather button:hover {
+    background-color: #8b1c1c; /* Darker red */
+}
+
+/* Weather Across the Globe Section */
+.global-weather {
+    grid-area: global-weather;
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    min-height: 400px; /* Fixed height to prevent layout shifting */
+}
+
+.global-weather h2 {
+    font-family: 'Garamond', serif;
+    font-size: 1.8rem;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 15px;
+}
+
+.global-weather div {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.global-weather h3 {
+    font-size: 1.5rem;
+    color: #b22222; /* Royale Red */
+}
+
+.global-weather p {
+    font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.container2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.container2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.container2 ul li a:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+.return-home {
+    margin-top: 20px;
+}
+
+.return-home .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* White button */
+    color: #b22222; /* Royale Red text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #b22222; /* Add border for better contrast */
+}
+
+.return-home .button:hover {
+    background-color: #b22222; /* Button changes to red */
+    color: #fff; /* Text changes to white */
+}
+
+/* General Button Style */
+.btn {
+    background-color: #ff4b5c; /* Matches the red tone of your site */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Adds spacing */
+    font-size: 16px; /* Makes text readable */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effects */
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #e63946; /* Darker red for hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* For Buttons in the Recommendations Section */
+.recommendation-btn {
+    margin-top: 10px; /* Adds spacing above the button */
+    display: inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #b22222; /* Royale Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Specific to Edit Buttons */
+.edit-btn {
+    background-color: #ff9800; /* Orange for differentiation */
+    padding: 8px 16px; /* Slightly smaller padding */
+    font-weight: bold; /* Makes text stand out */
+}
+
+/* Hover Effect for Edit Buttons */
+.edit-btn:hover {
+    background-color: #e68a00; /* Darker orange */
+}
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

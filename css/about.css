@@ -1,0 +1,231 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #660000; /* Dark red */
+    line-height: 1.6;
+    background-image: url('Images/about.webp'); /* Replace with the actual path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background */
+    min-height: 100vh; /* Ensures it covers the full height of the viewport */
+}
+
+/* Header Styling */
+.header .navbar {
+    background-color: #b22222; /* Royale Red */
+    padding: 20px 10px;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Company_logo img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc;
+}
+
+
+/* Quote Section */
+.Quote {
+    margin: 10px auto; /* Minimal margin for compact spacing */
+    text-align: center;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.4; /* Adjusted for a more compact height */
+    color: #000000; /* Royale Red */
+    max-width: 800px; /* Keep the text aligned to the center */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission, .vision {
+    width: 45%;
+}
+
+.mission h2, .vision h2 {
+    color: #b22222;
+}
+
+/* Founders' Story Section */
+.founders-story {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founders-story h2 {
+    color: #b22222;
+    margin-bottom: 20px;
+}
+
+.founders-story ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.founders-story li {
+    margin-bottom: 10px;
+}
+
+/* Values Section */
+.values {
+    background-color: #fff; /* Matches the white cards in the upper body */
+    padding: 50px 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+}
+
+.values h2 {
+    font-size: 2rem;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 30px;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.value-card {
+    background-color: #f9f0f0; /* Light red background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 240px; /* Consistent with upper sections */
+    padding: 20px;
+    text-align: left;
+    color: #660000; /* Dark red text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card h3 {
+    font-size: 1.4rem;
+    color: #b22222; /* Royale Red */
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.value-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.container2 ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.container2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.container2 ul li a:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+.return-home {
+    margin-top: 20px;
+}
+
+.return-home .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* White button */
+    color: #b22222; /* Royale Red text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid #b22222; /* Add border for better contrast */
+}
+
+.return-home .button:hover {
+    background-color: #b22222; /* Button changes to red */
+    color: #fff; /* Text changes to white */
+}

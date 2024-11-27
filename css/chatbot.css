@@ -1,0 +1,275 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+.body1 {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/Wander1.webp'); /* Correct path to the image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    color: #660000; /* Dark red text color */
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px; /* Space for the footer */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #b22222; /* Royale Red */
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+.Company_logo {
+    width: 150px;
+    height: auto;
+}
+
+.Company_logo img {
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Disable interaction */
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar__links {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+/* Help Section Styling */
+.help-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #f7f7f7 100%); /* Subtle gradient */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 6px solid #a82222; /* Left border for emphasis */
+}
+
+.help-section h1 {
+    color: #a82222;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+
+.help-section p {
+    color: #444;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+    text-align: justify; /* Aligns text to both sides for a polished look */
+    padding: 0 10px; /* Padding for better spacing */
+}
+
+.help-section p strong {
+    color: #a82222; /* Highlighted keywords in text */
+    font-weight: bold;
+}
+
+/* Instructions Container */
+.instructions-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.help-category {
+    margin-bottom: 30px;
+}
+
+.help-category h2 {
+    color: #a82222;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.help-category p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.help-category ul {
+    list-style: square;
+    margin: 10px 0 0 20px;
+}
+
+.help-category ul li {
+    margin: 10px 0;
+    color: #333;
+}
+
+.help-category a {
+    color: #a82222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-category a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbot Styling */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a82222;
+    margin-bottom: 10px;
+}
+
+.chatbot-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.chatbot-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbot-input button {
+    padding: 10px 15px;
+    background-color: #a82222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-input button:hover {
+    background-color: #881919;
+}
+
+/* User Message */
+.user-message {
+    text-align: right;
+    color: #660000;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Chatbot Message */
+.bot-message {
+    text-align: left;
+    color: #333;
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #b22222; /* Royale Red */
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffcccc; /* Lightened red on hover */
+}
+
+.return-home {
+    margin-top: 10px;
+}
+
+.return-home .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* White button */
+    color: #b22222; /* Royale Red text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #b22222; /* Add border for better contrast */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.return-home .button:hover {
+    background-color: #b22222; /* Button changes to red */
+    color: #fff; /* Text changes to white */
+}
