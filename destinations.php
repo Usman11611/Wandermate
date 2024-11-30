@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $userId = $_SESSION['user_id'];
 
-// Fetch user plans
+// Fetch user plans with the most recent ones first
 $userId = $_SESSION['user_id'];
 
 $query = "
@@ -34,15 +34,13 @@ $query = "
     LEFT JOIN location_db.tbl_cities ON plans.city = tbl_cities.id
 ";
 
-// Order by most recent trips first (based on created_at or updated_at)
-$query .= " ORDER BY plans.created_at DESC";
 
 if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
     // Admins see all plans
     $query .= "";
 } else {
     // Regular users see only their own plans
-    $query .= " WHERE plans.user_id = '$userId'";
+    $query .= "WHERE plans.user_id = '$userId'";
 }
 
 $result = mysqli_query($con, $query);
@@ -330,3 +328,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['preferredWeather'])) 
 
 </body>
 </html>
+
+
+
